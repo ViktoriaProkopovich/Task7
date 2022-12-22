@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="382.0" prefWidth="458.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="214.0" prefWidth="417.0">
+         <children>
+            <FlowPane layoutY="177.0" prefHeight="44.0" prefWidth="418.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#st" text="Старт" />
+                  <Button fx:id="stopButton" mnemonicParsing="false" onAction="#sp" prefHeight="26.0" prefWidth="51.0" text="Стоп" />
+                  <TextField fx:id="seconds" prefHeight="26.0" prefWidth="314.0" />
+               </children>
+            </FlowPane>
+            <VBox layoutX="8.0" layoutY="12.0" prefHeight="149.0" prefWidth="186.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Stop.png" />
+                     </image></ImageView>
+
+               </children>
+            </VBox>
+            <AnchorPane layoutX="226.0" layoutY="7.0" prefHeight="162.0" prefWidth="185.0">
+               <children>
+                  <Canvas fx:id="canvas" height="244.0" layoutX="-14.0" layoutY="-63.0" width="200.0" />
+                  <FlowPane layoutX="-14.0" layoutY="-37.0" prefHeight="33.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#star" text="старт" />
+                        <Button mnemonicParsing="false" onAction="#sto" text="стоп" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+            <Button layoutY="-5.0" mnemonicParsing="false" onAction="#statata" text="старт" />
+            <Button layoutX="52.0" layoutY="-5.0" mnemonicParsing="false" onAction="#stopppp" text="стоп" />
+         </children>
+      </AnchorPane>
+      <Button mnemonicParsing="false" onAction="#syop" text="Запустить таймер" />
+      <Button mnemonicParsing="false" onAction="#startbbb" text="Остановка таймера" />
+   </children>
+</VBox>
